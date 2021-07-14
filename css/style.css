@@ -1,0 +1,377 @@
+/* ---------- 
+Common Styles 
+---------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0%;
+}
+
+
+
+/* ----------
+Heading Styles
+---------- */
+
+header{
+    height: 677px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    background-color: #2D25A0;
+}
+
+.header-title{
+    display: flex;
+    flex-direction: column;
+    font-size: 64px;
+    font-weight: 700;
+}
+
+.header-title a{
+    color: white;
+    text-decoration: none;
+    width: 168px;
+    height: 44px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #E02C6D;
+    padding: 10px 30px;
+    border: none;
+    box-shadow: none;
+    transition: box-shadow 0.5s 0s , transform 0.3s 0s;
+    transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.header-title a:hover{
+    color: #E02C6D;
+    box-shadow: inset 170px 0px 0px white;
+}
+
+
+header img{
+    width: 556.33px;
+    height: 456px;
+    transition: transform 0.3s 0s;
+    transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+header:hover img{
+    transform: scale(1.1);
+}
+
+/* -------------------------
+Card Styles on main section 
+-------------------------- */
+main{
+    margin-top: 70px;
+}
+
+.players{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 150px;
+}
+
+.player-cards{
+    display: grid;
+    width: 1050px;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    row-gap: 27px;
+}
+
+.card{
+    width: 330px;
+    padding: 15px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s 0s;
+    transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+.card img{
+    width: 100%;
+}
+
+.card h3{
+    font-size: 28px;
+    font-weight: 700;
+}
+
+/* -----------
+Standing Styles
+------------- */
+.standings{
+    text-align: center;
+}
+
+.standing-title{
+    color: white;
+    background-color: #E02C6D;
+    margin-bottom: 60px;
+    margin-left: 35%;
+    margin-right: 35%;
+    border-radius: 50px;
+    
+}
+
+.standing-table{
+    display: flex;
+    justify-content: space-evenly;   
+    align-items: center;
+    margin-top: 50px;
+}
+
+.groups{
+    color: white;
+    background-image: linear-gradient(315deg, #9921e8, #2c69d1);
+    border: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.250);
+    padding: 20px;
+}
+
+.groups table{
+    border-collapse: collapse;
+}
+
+.groups th, .groups td{
+    border-bottom: 1px solid white;  
+    text-align: left;  
+    padding: 10px 20px;
+}
+
+
+/*---------------
+ Top scorer styles
+--------------- */
+article{
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px;
+    text-align: center;
+    
+}
+.article-title{
+    color: white;
+    background-color: #E02C6D;
+    margin-bottom: 60px;
+    margin-left: 40%;
+    margin-right: 40%;
+    border-radius: 50px;
+}
+
+.article-title h1{
+    transition: transform 0.1s 0s;
+    transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.article-title:hover h1{
+    transform: scale(1.2);
+}
+
+.article-detail{
+    display: flex;
+    justify-content: center;
+}
+
+.article-detail img{
+    width: 100%;
+}
+
+.article-detail table{
+    border-spacing: 37px;
+}
+
+article tr{
+    border-radius: 30px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.100);
+}
+
+article th{ 
+    text-align: left;  
+    padding: 10px 80px;
+}
+
+article td{
+    text-align: left;
+    padding: 0 80px 25px 80px;
+}
+
+.fa-crown{
+    visibility: hidden;
+    color:#fabc3c;
+    transform: scale(0.1);
+    transition: all 0.3s 0s;
+    transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.article-info:hover .fa-crown{
+    transform: translate(20px, -5px) scale(1.5);
+    visibility: visible;
+    color:#fabc3c;
+}
+
+
+
+/* ---------- 
+Footer Styles 
+----------- */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+footer a{
+    color: black;
+    font-size: 20px;
+}
+.fa-facebook,  .fa-instagram, .fa-twitter, .fa-youtube{
+    transition: all 0.1s 0s;
+    transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+footer a:hover .fa-facebook{
+    color: #4267B2;
+    font-size: 24px;
+}
+
+footer a:hover .fa-instagram{
+    color: #833AB4;
+    font-size: 24px;
+}
+footer a:hover .fa-twitter{
+    color: #1DA1F2;
+    font-size: 24px;
+}
+footer a:hover .fa-youtube{
+    color: #FF0000;
+    font-size: 24px;
+}
+
+
+
+.icons {
+    display: grid;
+    grid-template-columns: repeat(4, 25px);
+    grid-column-gap: 20px;
+}
+
+
+
+/*-------------- 
+For mobile phones: 
+-----------------*/
+
+@media screen and (max-width: 688px) {
+    /* header */
+
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 20px;
+        height: 695px;
+    }
+
+    .header-title{
+        font-size: 36px;
+    }
+
+    header img{
+        width: 333.8px;
+        height: 273.6px;
+    }
+
+    /*-----
+     main
+    ----- */
+
+    /* player cards */
+    .player-cards{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* tables */
+
+    .standing-title{
+        margin-bottom: 60px;
+        margin-left: 15%;
+        margin-right: 15%;
+        border-radius: 50px;
+        padding: 1px;
+    }
+    .standing-title h1{
+        font-size: 18px;
+    }
+
+    .standing-table{
+        display: flex;
+        flex-direction: column;
+    } 
+
+    .groups{
+        margin: 2%;
+    }
+    
+
+    .groups th, .groups td{
+        font-size: 12px;
+        padding: 3px 5px;
+    }
+    
+    /* top scorer */
+    article{
+        margin-top: 100px;
+    }
+    .article-title{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .article-title h1{
+        font-size: 20px;
+    }
+
+    .article-detail{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .article-detail img {
+        width: 50%;
+    }
+
+    .article-detail table{
+        border-spacing: 15px;
+    }
+    
+    article th{ 
+        text-align: left; 
+        padding: 10px 20px;
+    }
+    
+    article td{ 
+        text-align: left; 
+        padding: 0px 20px 20px 20px;
+    }
+
+    
+    /* footer  */
+
+    footer img{
+        width: 70%;
+    }
